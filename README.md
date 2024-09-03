@@ -139,6 +139,11 @@ python u2net_portrait_composite.py -s 20 -a 0.5
 git clone https://github.com/NathanUA/U-2-Net.git
 ```
 
+python3.10 -m venv u2net-env
+source u2net-env/bin/activate
+
+pip3 install -r requirements.txt
+
 2. Download the u2net_portrait.pth from [**GoogleDrive**](https://drive.google.com/file/d/1IG3HdpcRiDoWNookbncQjeaPN28t90yW/view?usp=sharing) or [**Baidu Pan(提取码：chgd)**](https://pan.baidu.com/s/1BYT5Ts6BxwpB8_l2sAyCkw)model and put it into the directory: ```./saved_models/u2net_portrait/```.
 
 3. Run on the testing set. <br/>
@@ -167,7 +172,7 @@ git clone https://github.com/NathanUA/U-2-Net.git
 
 ## Required libraries
 
-Python 3.6  
+Python 3.10.12  
 numpy 1.15.2  
 scikit-image 0.14.0  
 python-opencv
@@ -181,6 +186,11 @@ glob
 ```
 git clone https://github.com/NathanUA/U-2-Net.git
 ```
+python3.10 -m venv u2net-env
+source u2net-env/bin/activate
+
+pip3 install -r requirements.txt
+
 2. Download the pre-trained model u2net.pth (176.3 MB) from [**GoogleDrive**](https://drive.google.com/file/d/1ao1ovG1Qtx4b7EoskHXmi2E9rp5CHLcZ/view?usp=sharing) or [**Baidu Pan 提取码: pf9k**](https://pan.baidu.com/s/1WjwyEwDiaUjBbx_QxcXBwQ) or u2netp.pth (4.7 MB) from [**GoogleDrive**](https://drive.google.com/file/d/1rbSTGKAE-MTxBYHd-51l2hMOQPT_7EPy/view?usp=sharing) or [**Baidu Pan 提取码: 8xsi**](https://pan.baidu.com/s/10tW12OlecRpE696z8FxdNQ) and put it into the dirctory './saved_models/u2net/' and './saved_models/u2netp/'
 
 3.  Cd to the directory 'U-2-Net', run the train or inference process by command: ```python u2net_train.py```
